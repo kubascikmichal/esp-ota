@@ -1,0 +1,7 @@
+dependencies:
+  ble_ota:
+    version: ~0.1.12
+  espressif/esp_encrypted_img:
+    version: ^2.0.1
+  idf:
+    version: '>=4.4'

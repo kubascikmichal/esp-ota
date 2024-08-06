@@ -1,0 +1,28 @@
+menu "Example Configuration"
+
+    config WIFI_SSID
+        string "WiFi SSID"
+        default "JOEJOEJOE"
+        help
+            SSID (network name) for the example to connect to.
+
+    config WIFI_PASSWORD
+        string "WiFi Password"
+        default "spidermonkey"
+        help
+            WiFi password (WPA or WPA2) for the example to use.
+
+    config WIFI_CONN_MAX_RETRY
+        int "Maximum retry"
+        default 5
+        help
+            Set the Maximum retry to avoid station reconnecting to the AP unlimited when the AP is really inexistent.
+            
+            
+    config FIRMWARE_UPGRADE_URL
+        string "firmware upgrade url endpoint"
+        default "https://192.168.4.2:8080/version.json"
+        help
+            URL of server which hosts versions of firmware
+            image.    
+endmenu
